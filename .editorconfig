@@ -1,0 +1,15 @@
+root = true
+
+[*]                                     # Для каких файлов применять настройки
+charset = utf-8                         # Кодировка
+indent_style = space                    # Использовать пробелы в отступах
+indent_size = 2                         # Количество пробелов
+end_of_line = lf                        # Позволяет выбрать, что использовать на концах строк.
+trim_trailing_whitespace = true         # Удаление всех лишних пробелов
+insert_final_newline = true             # Позволяет убедиться, что в конце файла всегда будет новая строка.
+
+[*.{go,py,rb,php}]
+indent_size = 4
+
+[*.md]
+trim_trailing_whitespace = false
